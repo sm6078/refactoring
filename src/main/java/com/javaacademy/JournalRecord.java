@@ -20,10 +20,10 @@ public class JournalRecord {
     @Override
     public String toString() {
         if (bottle != null) {
-            return "Переработан стеклянный мусор, получились бутылки объема " + bottle.getVolume() + " мл";
+            return "Переработан стеклянный мусор, получились бутылки объема " + bottle.getVolume() + " мл\n";
         } else if (cartoon != null) {
-            return "Переработан картон, получилось " + cartoon.getWeight() + " кг картона";
+            return "Переработан бумажный мусор, получилось " + cartoon.getWeight() + " кг картона\n";
         }
-        return "Не переработано: " + garbageWeight + " килограмм мусора";
+        return "Не переработано: " + garbageWeight + " килограмм смешанного мусора\n";
     }
 }
